@@ -1,4 +1,7 @@
-# PyYTMusic
+import setuptools
+
+
+long_description = """# PyYTMusic
 
 Youtube Music API for Python
 
@@ -133,3 +136,29 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+"""
+
+setuptools.setup(
+    name='PyYTMusic',
+    packages=setuptools.find_packages(),
+    version='0.1.0',
+    license='MIT',
+    description='Python Youtube Music API',
+    author='Samet Keskin',
+    author_email='sametkeskin.py@gmail.com',
+    url='https://github.com/abdulsamedkeskin/PyYTMusic',
+    download_url='https://github.com/abdulsamedkeskin/PyYTMusic/archive/V0.1.6.tar.gz',
+    keywords=['PyYTMusic'],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+    ],
+    long_description=long_description,
+    long_description_content_type='text/markdown'
+)
