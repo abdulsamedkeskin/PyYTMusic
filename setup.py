@@ -141,14 +141,13 @@ SOFTWARE.
 setuptools.setup(
     name='PyYTMusic',
     packages=setuptools.find_packages(),
-    version='0.1.0',
+    version='0.1.2',
     license='MIT',
     description='Python Youtube Music API',
     author='Samet Keskin',
     author_email='sametkeskin.py@gmail.com',
     url='https://github.com/abdulsamedkeskin/PyYTMusic',
-    download_url='https://github.com/abdulsamedkeskin/PyYTMusic/archive/V0.1.6.tar.gz',
-    keywords=['PyYTMusic'],
+    keywords=['PyYTMusic', 'Youtube', 'Music', 'API'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
