@@ -10,7 +10,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 setuptools.setup(
     name='PyYTMusic',
     packages=setuptools.find_packages(),
-    version='0.1.2',
+    version='0.1.4',
     license='MIT',
     description='Python Youtube Music API',
     author='Samet Keskin',

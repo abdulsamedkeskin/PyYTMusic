@@ -5,12 +5,17 @@ from youtube_dl import YoutubeDL
 
 ydl_opts = {
     'format': 'bestaudio/best',
-    'quiet': True
+    'quiet': True,
+    'postprocessors': [{
+        'key': 'FFmpegExtractAudio',
+        'preferredcodec': 'mp3',
+        'preferredquality': '192',
+    }],
 }
 
 
 class Search:
-    def search(self, query: str, filter: List = None) -> List[Dict]:
+    def search(self, query: str, filter: List = None, limit: int = None) -> List[Dict]:
         filters = ['songs', "albums", "artists", "playlists",
                    "videos", "community playlists"]
         if filter is not None:
@@ -27,6 +32,8 @@ class Search:
             try:
                 filter_query = (eval(FILTER)).lower()
                 for _ in range(len(eval(CONTENTS))):
+                    if limit == _:
+                        break
                     if filter_query == "videos" or filter_query == "songs" or filter_query == "top result":
                         video_id = eval(VIDEO_ID)
                         with YoutubeDL(ydl_opts) as ydl:
@@ -62,6 +69,7 @@ class Search:
                                 "videoId": video_id,
                                 "playerUrl": eval(MUSIC_URL),
                                 "duration": eval(DURATION),
+                                "browseId": eval(BROWSE_ID).split("_")[-1],
                             }
                             data = {**data, **songs_data}
                         if filter_query == "videos":

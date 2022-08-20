@@ -14,10 +14,8 @@ pip install PyYTMusic
 from PyYTMusic import PyYTMusic
 
 ytmusic = PyYTMusic()
-search_results = ytmusic.search("we're good", ["songs"])
+search_results = ytmusic.search("we're good", ["songs"], limit=2)
 print(search_results)
-
-
 ```
 
 ### Output :
@@ -25,21 +23,6 @@ print(search_results)
 ```json
 {
   "results": [
-    {
-      "type": "top result",
-      "name": "We're Good",
-      "thumbnails": [
-        {
-          "url": "https://i.ytimg.com/vi/jr47YisIsz8/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg&rs=AMzJL3nwkTmeRwXHiFfKUdq5rT3JEKjQ9A",
-          "width": 400,
-          "height": 225
-        }
-      ],
-      "author": "Dua Lipa",
-      "videoId": "jr47YisIsz8",
-      "playerUrl": "https://rr8---sn-u0g3jxaa-n5fs.googlevideo.com/videoplayback?expire=1660326601&ei=aT72YuSAKJDegAeR8pmgBw&ip=176.234.226.113&id=o-ALl4XZK3QhUJqDc8nSIUyU243TKDW_gN3sJ4wLtmVHF1&itag=249&source=youtube&requiressl=yes&mh=Tw&mm=31%2C29&mn=sn-u0g3jxaa-n5fs%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=8&pl=22&initcwndbps=761250&spc=lT-Khh9dmVplSupsl1KJjpGqbF5NlwI&vprv=1&mime=audio%2Fwebm&ns=N1cnr6P2nBML9kpVLNhgLhcH&gir=yes&clen=1219315&dur=191.681&lmt=1646363055152298&mt=1660304234&fvip=4&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=4532434&n=s_tdI5CVZqmKAoxuo6&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRgIhAKJcfGq0OlHSZpABjQCrsALdjO8XKdLLb1LehNBh6ln1AiEA-INLGcH4WNaKL3yiQawk7MoUZCj4KHSHQqLy6hXdWEc%3D&sig=AOq0QJ8wRgIhALgO9zc9uDMNXC-YzucaUu-sfgkHZsLiG3AmsZutN54dAiEA9b1n5zEEy-Lw5yqwVbdIlFWHaCJ9Byvx5Ma0SY3tG6I=",
-      "duration": "3:12"
-    },
     {
       "type": "songs",
       "name": "We're Good",
@@ -57,8 +40,9 @@ print(search_results)
       ],
       "author": "Dua Lipa",
       "videoId": "CBjtouAePhM",
-      "playerUrl": "https://rr8---sn-u0g3jxaa-n5fl.googlevideo.com/videoplayback?expire=1660326602&ei=aj72YvfwGoS91gL61an4Cw&ip=176.234.226.113&id=o-AIUubV5ttJJiIEKHFQSAr-yl_IsB7v7rGSp9jN15tLeU&itag=249&source=youtube&requiressl=yes&mh=1K&mm=31%2C29&mn=sn-u0g3jxaa-n5fl%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=22&gcr=tr&initcwndbps=731250&spc=lT-Khj-QgZhf7VoBoEXGS1SnT5iZl54&vprv=1&mime=audio%2Fwebm&ns=nQ8lpKlGXkdV6VY19w_2uEkH&gir=yes&clen=1082461&dur=165.521&lmt=1623555310521291&mt=1660304234&fvip=1&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=5532434&n=d77b4xVTJCTGHE4lmV&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIhAPxqgbNxQZ376O_nt59mf1AdNTuYbkElYXYfb8E7kssuAiATeN-zMUEgF7AeQG5LpZlatSnYg4dayCtsSGv4wDB2hw%3D%3D&sig=AOq0QJ8wRQIgaNMMxwwd5lQjibIGDnVF_x7ovVWrEUr2e2ZCldyEEqoCIQCAsPs-0cgICUtLXheHKITQ7UCSTZjH0luqLXbUVKevag==",
-      "duration": "2:46"
+      "playerUrl": "https://rr8---sn-u0g3jxaa-n5fl.googlevideo.com/videoplayback?expire=1661038670&ei=7hsBY82hJJem1gLj-Z-QCg&ip=176.234.231.93&id=o-AOEhm9JYdeOLNoZscjOcOtuIPzKdYxzaNthTT1owifut&itag=249&source=youtube&requiressl=yes&mh=1K&mm=31%2C29&mn=sn-u0g3jxaa-n5fl%2Csn-nv47lns6&ms=au%2Crdu&mv=m&mvi=8&pl=22&gcr=tr&initcwndbps=876250&vprv=1&mime=audio%2Fwebm&ns=E3EB36kJMMcvHHxbFqro9jEH&gir=yes&clen=1082461&dur=165.521&lmt=1623555310521291&mt=1661016796&fvip=1&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=5532434&n=UIsx5rzN4vEpSATIDY&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRgIhAO8c708ff0bSp_w1V5flIywCCEm9Ct5N9r8O_puUCOSBAiEA-4p4gGi2OZbOv19k1E8vSYlvK6_AbMexfXHzi9TcXIA%3D&sig=AOq0QJ8wRQIgWfWcGY2b520USzp2gxAZJ4je1vQ_DUQQT8phHSWlzt0CIQCQdaQvjp_cXm4X_4f2PtXuVMaeg45Ohf4AZg6FMrqvDQ==",
+      "duration": "2:46",
+      "browseId": "sNLYDmaJpcI"
     },
     {
       "type": "songs",
@@ -77,37 +61,77 @@ print(search_results)
       ],
       "author": "Dua Lipa",
       "videoId": "hLzo1ZZu76w",
-      "playerUrl": "https://rr7---sn-u0g3jxaa-n5fe.googlevideo.com/videoplayback?expire=1660326603&ei=az72YtvNCcaj1gKUvqjQAQ&ip=176.234.226.113&id=o-AI9sk6OhFOgR6ofZNWNYQ9iiPniOA9lIUnQ9bv8UJRXa&itag=249&source=youtube&requiressl=yes&mh=hR&mm=31%2C29&mn=sn-u0g3jxaa-n5fe%2Csn-nv47lnl6&ms=au%2Crdu&mv=m&mvi=7&pl=22&gcr=tr&initcwndbps=753750&spc=lT-KhiavbuQbica-r4--FJW1IGHNfVA&vprv=1&mime=audio%2Fwebm&ns=_0dy3jRs5Ylohs9z-Oo9-rUH&gir=yes&clen=1085260&dur=165.521&lmt=1624363536758656&mt=1660304234&fvip=6&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=5411222&n=tZ3Dn5vMI70-IE0uIp&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgBAvr3xcAFgFcGDQRhbI_XXhSF-WvuuT8k3Bf34ZKkK4CIHCAHkwWM2C11QwxKtgBdTcmz9E5dUZcZDG53B5T0dac&sig=AOq0QJ8wRQIhANMNwD2xE9O5ANfGL1THtS57ynlVCuRuYu1lmUfN5ZMVAiAc-KtFJOu0d939FYEGhzIB_9JGJAKS8OkW1Kt2Hwkd6A==",
-      "duration": "2:46"
-    },
-    {
-      "type": "songs",
-      "name": "We're Good (Originally Performed By Dua Lipa) (Karaoke Version)",
-      "thumbnails": [
-        {
-          "url": "https://lh3.googleusercontent.com/jrhyRmvkogMgeBStijcMf0xLstqFXRZzIgtdCGJoMj8iTTtWQ29yWsty_2ME5JSmDSFe-d3T4dBceVWe=w60-h60-l90-rj",
-          "width": 60,
-          "height": 60
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/jrhyRmvkogMgeBStijcMf0xLstqFXRZzIgtdCGJoMj8iTTtWQ29yWsty_2ME5JSmDSFe-d3T4dBceVWe=w120-h120-l90-rj",
-          "width": 120,
-          "height": 120
-        }
-      ],
-      "author": "Hit The Button Karaoke",
-      "videoId": "ZkjBFWKtDrc",
-      "playerUrl": "https://rr6---sn-u0g3jxaa-n5fs.googlevideo.com/videoplayback?expire=1660326603&ei=az72YtCkMZyR1gLX5ajABA&ip=176.234.226.113&id=o-AKm2VFMxffoUQhn3ZU01uZVIlAb3GLp59S2KlzKFI417&itag=249&source=youtube&requiressl=yes&mh=Ae&mm=31%2C29&mn=sn-u0g3jxaa-n5fs%2Csn-nv47lnl6&ms=au%2Crdu&mv=m&mvi=6&pl=22&gcr=tr&initcwndbps=761250&spc=lT-KhmoeUZmHYOG9VkZoSpmOFNnqwBY&vprv=1&mime=audio%2Fwebm&ns=A3LprjV3lobATq099pLv1vsH&gir=yes&clen=1108906&dur=164.121&lmt=1616590294521237&mt=1660304234&fvip=3&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=2311224&n=CkRGkBWhVWnMWdnXPv&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRAIgSZztskVnesBpfu2bnCQQyZBkVcqiGbnk0TJ8ThT5Cr0CICLYptv7yomXck9Vv5di5FWiC5csuI4J6E16Qj3-P9Xe&sig=AOq0QJ8wRAIgc5B1hztcAHxqjQjFpRYccFc9nHAk9m3nHl0cY0ueD2wCIDiIG0Z7CbAdBPCT7ZjlEygV2c33DmYKl22MWOfleIBL",
-      "duration": "2:45"
+      "playerUrl": "https://rr7---sn-u0g3jxaa-n5fe.googlevideo.com/videoplayback?expire=1661038671&ei=7xsBY8DEDoyygAeClo3wBQ&ip=176.234.231.93&id=o-ACD_idiO1A2k47rTa2YlAFtlB5ctD2Xg45aas7zrHuaQ&itag=249&source=youtube&requiressl=yes&mh=hR&mm=31%2C29&mn=sn-u0g3jxaa-n5fe%2Csn-nv47lnl6&ms=au%2Crdu&mv=m&mvi=7&pcm2cms=yes&pl=22&gcr=tr&initcwndbps=876250&vprv=1&mime=audio%2Fwebm&ns=q7jZVQ6AzMRn_h69uQQVv4cH&gir=yes&clen=1085260&dur=165.521&lmt=1624363536758656&mt=1661016796&fvip=6&keepalive=yes&fexp=24001373%2C24007246&c=WEB&rbqsm=fr&txp=5411222&n=LSFLe0_ZB7axm8CfOs&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRgIhAIqo9FwdlhXakCt_6CMDa1bxPT5taBjh2eWjR9ZCBMl3AiEAs-U0tHkvYTyOV7WwGC1wTOrEFWjXxMdtUnkilF0LBQ4%3D&sig=AOq0QJ8wRAIgKjCpNGmIvwAQr0CFBAOCi8qQvczB8cq9yyA34e15qvcCIE2gDp7LvGSqS2V1ggsO8uS2hU81-kGdbV7lB_idXv1o",
+      "duration": "2:46",
+      "browseId": "KTYZfne5SOa"
     }
   ]
 }
 ```
 
+### You can fetch lyrics with lyrics method
+
+```python
+from PyYTMusic import PyYTMusic
+
+ytmusic = PyYTMusic()
+
+results = ytmusic.search("we're good", ['songs'], limit=1)
+name = results['results'][0]['name']
+browse_id = results['results'][0]['browseId']
+lyrics = ytmusic.lyrics(name, browse_id)
+print(lyrics['result'])
+```
+
+### Output :
+
+```
+I'm on an island
+Even when you're close
+Can't take the silence
+I'd rather be alone
+I think it's pretty plain and simple
+We gave it all we could
+It's time I wave goodbye from the window
+Let's end this like we should and say we're good
+
+We're not meant to be like sleeping and cocaine
+So let's at least agree to go our separate ways
+Not gonna judge you when you're with somebody else
+As long as you swear you won't be pissed when I do it myself
+Let's end it like we should and say we're good
+
+No need to hide it
+Go get what you want
+This won't be a burden if we both don't hold a grudge
+I think it's pretty plain and simple
+We gave it all we could
+It's time I wave goodbye from the window
+Let's end this like we should and say we're good
+
+We're not meant to be like sleeping and cocaine
+So let's at least agree to go our separate ways
+Not gonna judge you when you're with somebody else
+As long as you swear you won't be pissed when I do it myself
+Let's end it like we should and say we're good
+
+Now you're holding this against me
+Like I knew you would
+I'm trying my best to make this easy
+So don't give me that look, just say we're good
+
+We're not meant to be like sleeping and cocaine
+So let's at least agree to go our separate ways
+Not gonna judge you when you're with somebody else
+As long as you swear you won't be pissed when I do it myself
+Let's end it like we should and say we're good
+```
+
 ## Methods
 
 ```python
-search('song name', ['filters'])
+search('song name', ['filters'], limit)
+lyrics('song_name', 'browseId')
 ```
 
 # License
