@@ -16,4 +16,7 @@ class Lyrics:
                 UNAUTHORIZED_PAYLOAD['browseId'] = f"MPLYt_{browse_id}-{i+1}"
                 lyrics = requests.post(LYRICS_URL, json=UNAUTHORIZED_PAYLOAD)
                 result = lyrics.json()
-        return {"result": eval(LYRICS)}
+        try:
+            return {"result": eval(LYRICS)}
+        except KeyError:
+            return {"result": "No lyrics found"}
